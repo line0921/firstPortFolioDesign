@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -190px;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input,textarea{
+    width:100%;
+    padding: 10px;
+    outline: 0;
+    border: 2px solid #F9C34F;
+    color: #fff;
+    background: #AE986A;
+    font-size: 15px;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+    letter-spacing: 1px;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group{
+    flex-basis: 48%;
+}
+
+
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background-color: #EBAA1F;
+    border: 2px solid #F9C34F;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 1px 1px;
+
+
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-image: url(../images/prof2BW.jpg);
+    background-size: 100%;
+    background-color: #898989;
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
+    background-position-y: 8em;
+}
+
+.content {
+    padding: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.titleContainer{
+    position: relative;
+    margin-top: 8em;
+    margin-left: 1em;
+}
+.contactT{
+    display: inline-block;
+    font-family: "Poppins",sans-serif;
+    letter-spacing: 4px;
+}
+
+.contactT:nth-child(1){
+    color: white;
+}
+
+.contactT:nth-child(2){
+    margin-left: 5px;
+    color: rgb(252, 194, 4);
+}
+
+.navigation {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background-image: url(../images/canvas.jpg);
+    background-position: center;
+    background-size: 220%;
+    background-repeat: no-repeat;
+    background-position-y:8em ;
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 500ms ease-in-out;
+}
+
+.navigation.active {
+    clip-path: circle(75%);
+}
+.navigation .dropMenu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navigation .dropMenu span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 3px;
+    background: whitesmoke ;
+    transition: all .5s ease-in-out;
+    
+}
+.navigation .dropMenu span:nth-child(1) {
+    top: 34%;
+}
+.navigation .dropMenu span:nth-child(2) {
+    top: 50%;
+}
+.navigation .dropMenu span:nth-child(3) {
+    top: 65%;
+}
+
+.navigation.active .dropMenu span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.navigation.active .dropMenu span:nth-child(2) {
+    opacity: 0;
+}
+.navigation.active .dropMenu span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navigation .dropMenu span:hover{
+    width: 35%;
+    transition: all .5s ease-in-out;
+}
+
+.navigation .links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999999;
+}
+.navigation .links a {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+}
+.navigation .links a:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    height: 2px;
+    width: 0%;
+    background: #EBAA1F;
+    transition: all .6s ease-in-out;
+}
+
+
+.navigation .links a:hover:after {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 800px){
+    body{
+        background-size: 100%;
+        background-position: center;
+    }
+}
