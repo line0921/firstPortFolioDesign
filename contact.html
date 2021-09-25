@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+      <title>ContactMe</title>
+      <link rel="stylesheet" href="css/contact.css">
+  </head>
+  <body>
+    <div class="navigation">
+        <div class="dropMenu" onclick="showNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="links">
+          <div class="link">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="link">
+            <a href="mySkills.html">My Skills</a>
+          </div>
+          <div class="link">
+            <a href="contact.html">Contact Me</a>
+          </div>
+          <div class="link">
+            <a href="#"></a>
+          </div>
+        </div>
+    </div>
+    <div class="titleContainer">
+      <h1 class="contactT">Contact</h1>
+      <h1 class="contactT">Me</h1>
+    </div>
+    <div class="hero">
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <textarea  id="mesage" rows="8" required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit">SUBMIT</button>
+            
+        </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
