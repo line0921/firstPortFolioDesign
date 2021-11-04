@@ -2,7 +2,7 @@
 
 ## Language Used
 - HTML
-- CSS
+- CSS3
 
 
 ## Focus
